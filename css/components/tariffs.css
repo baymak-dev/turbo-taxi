@@ -1,0 +1,235 @@
+.tariffs {
+  background-color: var(--color-bg);
+  padding: var(--section-padding);
+}
+
+.tariffs__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--gap-xl);
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.tariffs__block {
+  flex: 1;
+  min-width: 300px;
+  max-width: 450px;
+  background: var(--color-white);
+  padding: var(--gap-lg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition);
+  border: 1px solid var(--color-gray-lighter);
+}
+
+.tariffs__block:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary-light);
+}
+
+.tariffs__subtitle {
+  font-size: var(--text-xl);
+  color: var(--color-black);
+  margin-bottom: var(--gap);
+  padding-left: var(--gap);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  position: relative;
+}
+
+.tariffs__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.tariffs__list {
+  list-style: none;
+  padding: 0;
+}
+.tariffs__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--gap-md);
+  padding-bottom: var(--gap-sm);
+  border-bottom: 1px solid var(--color-gray-lighter);
+  font-size: var(--text-base);
+  color: var(--color-gray);
+  transition: var(--transition-fast);
+  position: relative;
+  z-index: 2;
+}
+
+.tariffs__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  background-color: var(--color-primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--transition-fast);
+}
+
+.tariffs__item:hover::before {
+  transform: scaleX(1);
+}
+
+.tariffs__item:hover {
+  color: var(--color-black);
+}
+
+.tariffs__item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tariffs__price {
+  font-weight: 700;
+  color: var(--color-black);
+  font-size: var(--text-md);
+  font-family: var(--font-accent);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  white-space: nowrap;
+  transition: var(--transition-fast);
+}
+
+.tariffs__price::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
+  transition: var(--transition-fast);
+}
+
+.tariffs__item:hover .tariffs__price {
+  color: var(--color-primary-dark);
+  transform: translateX(3px);
+}
+
+.tariffs__item:hover .tariffs__price::after {
+  background-color: var(--color-primary-dark);
+  transform: scale(1.2);
+}
+
+.tariffs__price[data-plus]::before {
+  content: "+";
+  color: var(--color-primary);
+  font-weight: 700;
+  transition: var(--transition-fast);
+}
+
+.tariffs__item:hover .tariffs__price[data-plus]::before {
+  color: var(--color-primary-dark);
+}
+
+/* Адаптивність */
+/* Планшети (992px) */
+@media (max-width: 992px) {
+  .tariffs__wrapper {
+    gap: var(--gap-lg);
+  }
+
+  .tariffs__block {
+    min-width: 280px;
+    max-width: 400px;
+    padding: var(--gap);
+  }
+}
+
+/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
+@media (max-width: 768px) {
+  .tariffs__wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-lg);
+    padding-inline: var(--container-padding);
+  }
+
+  .tariffs__block {
+    width: 100%;
+    max-width: 500px;
+    min-width: unset;
+  }
+
+  .tariffs__subtitle {
+    font-size: var(--text-lg);
+  }
+}
+
+/* Телефони (576px) */
+@media (max-width: 576px) {
+  .tariffs__block {
+    padding: var(--gap);
+    max-width: 400px;
+  }
+
+  .tariffs__item {
+    flex-wrap: nowrap;
+  }
+
+  .tariffs__item span:first-child {
+    flex: 1;
+    min-width: 0;
+    word-wrap: break-word;
+    margin-right: var(--gap);
+  }
+
+  .tariffs__price {
+    flex-shrink: 0;
+  }
+
+
+}
+
+/* Малі телефони (480px) */
+@media (max-width: 480px) {
+  .tariffs__item {
+    font-size: var(--text-sm);
+  }
+
+  .tariffs__price {
+    font-size: var(--text-sm);
+  }
+
+  .tariffs__subtitle {
+    font-size: var(--text-md);
+  }
+}
+
+/* Дуже малі телефони (375px) */
+@media (max-width: 375px) {
+  .tariffs__block {
+    padding: var(--gap-sm);
+  }
+
+  .tariffs__item {
+    flex-wrap: wrap;
+  }
+
+  .tariffs__item span:first-child {
+    width: 100%;
+    margin-bottom: var(--gap-xs);
+  }
+
+  .tariffs__price {
+    align-self: flex-start;
+    
+  }
+}

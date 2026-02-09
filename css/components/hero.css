@@ -1,0 +1,103 @@
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  --hero-bg: url('../../assets/images/hero-panoramic-car.webp');
+
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.2) 100%),
+    var(--hero-bg) no-repeat center / cover;
+  content-visibility: auto;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero__content {
+  max-width: 550px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero__title {
+  font-size: clamp(32px, 5vw, 64px);
+  color: var(--color-white);
+  line-height: 1.1;
+  margin-bottom: var(--gap);
+}
+
+.hero__title--highlight {
+  color: var(--color-primary);
+  display: block;
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-gray-light);
+  line-height: var(--leading-normal);
+}
+
+/* Адаптивність */
+/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
+@media (max-width: 768px) {
+  .hero {
+    justify-content: center;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('../../assets/images/hero-panoramic-car.webp') no-repeat center / cover;
+  }
+
+  .hero__content {
+  max-width: 550px;
+  text-align: right;
+  }
+
+  .hero__title {
+    font-size: clamp(24px, 4vw, 28px);
+    line-height: 1.2;
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-base);
+    padding: 0 var(--gap-sm);
+  }
+
+  .button.button--pulse {
+    margin-bottom: var(--gap-md);
+    font-size: var(--text-base);
+    padding: var(--gap) var(--gap-lg);
+  }
+}
+
+/* ===== ДУЖЕ МАЛІ ЕКРАНИ ===== */
+@media (max-width: 480px) {
+  .hero {
+    min-height: 75vh;
+  }
+    .hero__content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__title {
+    font-size: var(--text-2xl);
+  }
+
+  .hero__subtitle {
+    font-size: var(--text-sm);
+  }
+
+  .button.button--pulse {
+    width: 100%;
+    max-width: 280px;
+    font-size: var(--text-sm);
+    margin-bottom: var(--gap);
+  }
+}

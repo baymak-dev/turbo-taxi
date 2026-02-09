@@ -1,0 +1,207 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  min-width: 320px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-dark-1);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+section {
+  scroll-margin-top: var(--header-height);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  width: 100%;
+  padding-left: var(--container-padding) !important;
+  padding-right: var(--container-padding) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-accent);
+  line-height: 1.2;
+  color: var(--color-dark-1);
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+  display: inline-block;
+}
+
+a:hover {
+  color: var(--color-primary);
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+img {
+  object-fit: cover;
+}
+
+svg {
+  fill: currentColor;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  appearance: none;
+}
+
+button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-gray);
+  opacity: 0.7;
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.section {
+  padding: var(--section-padding);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ===== АДАПТИВНІСТЬ ===== */
+
+/* Планшети (768px) */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .section {
+    padding: var(--section-padding-tablet, 60px 0);
+  }
+
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Телефони (480px) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .section {
+    padding: var(--section-padding-mobile, 40px 0);
+  }
+}
+
+/* Скроллбар */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg-light);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gray);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+  }
+}

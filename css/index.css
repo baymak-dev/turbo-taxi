@@ -1,0 +1,15 @@
+@import 'base/normalize.css';
+@import 'base/variables.css';
+@import 'base/fonts.css';
+@import 'base/globals.css';
+@import 'base/utilities.css';
+
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/button.css';
+@import 'components/services.css';
+@import 'components/tariffs.css';
+@import 'components/app-promo.css';
+@import 'components/reviews.css';
+@import 'components/footer.css';
+

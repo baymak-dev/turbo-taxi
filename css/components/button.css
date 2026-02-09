@@ -1,0 +1,116 @@
+/* БАЗОВА КНОПКА */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-sm);
+  padding: var(--gap) var(--gap-lg);
+  border-radius: var(--border-radius);
+  font-family: var(--font-accent);
+  font-weight: 700;
+  font-size: var(--text-base);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: var(--transition);
+  white-space: nowrap;
+  user-select: none;
+  position: relative;
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* КНОПКА З ПУЛЬСАЦІЄЮ (Hero кнопка) */
+.button--pulse {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  border-radius: var(--border-radius-lg);
+  isolation: isolate;
+}
+
+.button--pulse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background-color: var(--color-primary);
+  z-index: -1;
+  animation: pulse 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1.45);
+    opacity: 0;
+  }
+}
+
+.button--pulse:hover::before {
+  animation: none;
+  opacity: 0;
+}
+
+.button--pulse:hover {
+  background-color: var(--color-gray-dark);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(180, 213, 17, 0.4), var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+/* ПЕРВИННА КНОПКА */
+.button--primary {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  box-shadow: var(--shadow-primary);
+}
+
+.button--primary:hover {
+  background-color: var(--color-gray-dark);
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ДРУГОРЯДНА КНОПКА */
+.button--secondary {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.button--secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  box-shadow: var(--shadow-primary);
+}
+
+/* РОЗМІРИ */
+.button--sm {
+  padding: var(--gap-sm) var(--gap);
+  font-size: var(--text-sm);
+}
+
+.button--lg {
+  padding: var(--gap-lg) var(--gap-xl);
+  font-size: var(--text-lg);
+}
+
+/* АДАПТИВНІСТЬ */
+@media (max-width: 768px) {
+  .button {
+    padding: var(--gap-sm) var(--gap-md);
+  }
+}

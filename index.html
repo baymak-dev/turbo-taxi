@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taxi Turbo — Швидке таксі у Золочеві | Замовлення таксі онлайн</title>
+    <meta
+      name="description"
+      content="Taxi Turbo — швидке та комфортне таксі у Золочеві. Замовляй таксі онлайн цілодобово. Надійні водії, приємні ціни, миттєва подача."
+    />
+    <meta
+      name="keywords"
+      content="таксі Золочів, замовлення таксі Золочів, таксі онлайн Золочів, швидке таксі Золочів, таксі по місту Золочів, таксі в області, таксі Золочів ціни, виклик таксі Золочів"
+    />
+    <meta name="author" content="Taxi Turbo Золочів" />
+
+    <!-- Open Graph для соціальних мереж -->
+    <!-- ПОТРІБНО ОНОВИТИ ПІСЛЯ ЗАВАНТАЖЕННЯ (реальний домен) -->
+    <meta property="og:title" content="Taxi Turbo — Швидке таксі у Золочеві" />
+    <meta
+      property="og:description"
+      content="Швидке та комфортне таксі у Золочеві. Замовляй онлайн цілодобово. Надійні водії, приємні ціни."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta property="og:locale" content="uk_UA" />
+    <!-- ПОТРІБНО ОНОВИТИ (реальний URL сайту)-->
+    <meta property="og:url" content="https://taxiturbo-zolochiv.com" />
+    <meta name="geo.region" content="UA-46" />
+    <meta name="geo.placename" content="Золочів, Львівська область" />
+    <meta name="geo.position" content="49.80568;24.89437" />
+    <meta name="ICBM" content="49.80568, 24.89437" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <link rel="manifest" href="assets/icons/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- Канонічний URL -->
+    <!-- ПОТРІБНО ОНОВИТИ ПІСЛЯ ЗАВАНТАЖЕННЯ:(реальний домен)-->
+
+    <link rel="canonical" href="https://taxiturbo-zolochiv.com" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="/" aria-label="Turbo Taxi - на головну сторінку">
+            <img src="./assets/icons/logo.svg" alt="Логотип Turbo Taxi" class="logo-img" />
+          </a>
+        </div>
+
+        <nav class="header__menu menu" aria-label="Основна навігація">
+          <button
+            class="menu__icon"
+            type="button"
+            aria-label="Відкрити меню"
+            aria-expanded="false"
+            aria-controls="menu-list"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="menu__list" id="menu-list" role="list">
+<li class="menu__item">
+  <a href="#services" class="menu__link" data-i18n="nav.services">Послуги</a>
+</li>
+<li class="menu__item">
+  <a href="#tariffs" class="menu__link" data-i18n="nav.tariffs">Тарифи</a>
+</li>
+<li class="menu__item">
+  <a href="#app" class="menu__link" data-i18n="nav.app">Додаток</a>
+</li>
+<li class="menu__item">
+  <a href="#reviews" class="menu__link" data-i18n="nav.reviews">Відгуки</a>
+</li>
+<li class="menu__item">
+  <a href="#contacts" class="menu__link" data-i18n="nav.contacts">Контакти</a>
+</li>
+            <li class="menu__item menu__item--lang">
+              <div class="language-switcher-mobile">
+<p class="lang-label" data-i18n="language.label">Мова:</p>
+                <div class="lang-buttons">
+                  <button class="lang-btn" data-lang="uk" title="Українська">
+                    <span class="lang-text">UA</span>
+                  </button>
+                  <button class="lang-btn" data-lang="en" title="English">
+                    <span class="lang-text">EN</span>
+                  </button>
+                  <button class="lang-btn" data-lang="pl" title="Polski">
+                    <span class="lang-text">PL</span>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="language-switcher-desktop">
+          <button class="lang-btn-compact active" data-lang="uk" title="Українська">
+            <span class="flag-icon">🇺🇦</span>
+            <span class="lang-code">UA</span>
+          </button>
+          <div class="lang-dropdown">
+            <button class="lang-option" data-lang="uk">Українська</button>
+            <button class="lang-option" data-lang="en">English</button>
+            <button class="lang-option" data-lang="pl">Polski</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section id="hero" class="hero">
+        <div class="hero__container container">
+          <div class="hero__content">
+            <h1 class="hero__title" data-i18n="hero.title">
+              Швидке таксі <span class="hero__title--highlight">Turbo Taxi</span>
+            </h1>
+            <p class="hero__subtitle" data-i18n="hero.subtitle">
+              Твій комфорт — наш пріоритет. <br class="hero__br" />
+              Відчуй швидкість та преміальний сервіс у кожній поїздці.
+            </p>
+            <a href="tel:+380931914414" class="button button--pulse" data-i18n="hero.button">Викликати TAXI</a>
+          </div>
+        </div>
+      </section>
+      <section id="services" class="services section">
+        <div class="services__container container">
+          <h2 class="section-title" data-i18n="services.title">Наші Послуги</h2>
+          <div class="services__grid">
+            <article class="service-card">
+              <div class="service-card__icon"><i class="fa-solid fa-box-open"></i></div>
+              <h3 class="service-card__title" data-i18n="services.delivery.title">Доставка</h3>
+              <p class="service-card__text" data-i18n="services.delivery.text">
+                Продукти, ліки, пошта та передачі. Доставимо швидко прямо до твоїх дверей.
+              </p>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+              <h3 class="service-card__title" data-i18n="services.rental.title">Авто на час</h3>
+              <p class="service-card__text" data-i18n="services.rental.text">
+                Замовляй машину на певну годину. Ми будемо вчасно, щоб ти нікуди не запізнився.
+              </p>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon"><i class="fa-solid fa-user-shield"></i></div>
+              <h3 class="service-card__title" data-i18n="services.driver.title">Тверезий водій</h3>
+              <p class="service-card__text" data-i18n="services.driver.text">
+                Відпочивай спокійно. Наш професійний водій безпечно доставить тебе і твоє авто додому.
+              </p>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
+            </article>
+            <article class="service-card">
+              <div class="service-card__icon"><i class="fa-solid fa-van-shuttle"></i></div>
+              <h3 class="service-card__title" data-i18n="services.transfer.title">Трансфери</h3>
+              <p class="service-card__text" data-i18n="services.transfer.text">
+                Групові поїздки мікроавтобусом. Ідеально для великих компаній та подорожей.
+              </p>
+              <a href="tel:+380931914414" class="button button--primary card-btn" data-i18n="services.order"
+                >Замовити</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="tariffs" class="tariffs section">
+        <div class="tariffs__container container">
+          <h2 class="section-title" data-i18n="tariffs.title">Наші Тарифи</h2>
+          <div class="tariffs__wrapper">
+            <div class="tariffs__block">
+              <h3 class="tariffs__subtitle" data-i18n="tariffs.city.title">Поїздки по місту та області</h3>
+              <ul class="tariffs__list">
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.city.minimal">Мінімальне замовлення (до 2 км)</span>
+                  <span class="tariffs__price">80 грн</span>
+                </li>
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.city.within">По місту (після 2 км)</span>
+                  <span class="tariffs__price">33 грн/км</span>
+                </li>
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.city.outside">За місто</span>
+                  <span class="tariffs__price">35 грн/км</span>
+                </li>
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.city.waiting">Очікування (простій)</span>
+                  <span class="tariffs__price">4 грн/хв</span>
+                </li>
+              </ul>
+            </div>
+            <div class="tariffs__block">
+              <h3 class="tariffs__subtitle" data-i18n="tariffs.extra.title">Додаткові послуги</h3>
+              <ul class="tariffs__list">
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.extra.courier">Кур'єрська доставка</span>
+                  <span class="tariffs__price">130 грн</span>
+                </li>
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.extra.sober">Тверезий водій</span>
+                  <span class="tariffs__price" data-plus>300 грн</span>
+                </li>
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.extra.pets">Перевезення тварин</span>
+                  <span class="tariffs__price" data-plus>40 грн</span>
+                </li>
+                <li class="tariffs__item">
+                  <span data-i18n="tariffs.extra.minibus">Трансфер (мікроавтобус)</span>
+                  <span class="tariffs__price" data-plus>60 грн</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="app" class="app-promo section">
+        <div class="app-promo__container container">
+          <h2 class="app-promo__title title" data-i18n="app.title">Наш мобільний додаток</h2>
+          <div class="app-promo__wrapper">
+            <div class="app-promo__info">
+              <ul class="app-promo__list list-check">
+                <li class="list-check__item" data-i18n="app.feature1">Відстеження авто в реальному часі</li>
+                <li class="list-check__item" data-i18n="app.feature2">Попередня вартість поїздки</li>
+                <li class="list-check__item" data-i18n="app.feature3">Зручна оплата карткою</li>
+              </ul>
+              <div class="app-promo__links">
+                <a
+                  href="https://play.google.com/store/apps/details?id=ua.turbotaxi"
+                  class="app-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Завантажити з Google Play"
+                  data-i18n="app.googlePlay"
+                >
+                  Google Play
+                </a>
+                <a
+                  href="https://apps.apple.com/us/app/turbo-taxi/id6744297755"
+                  class="app-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Завантажити з App Store"
+                  data-i18n="app.appStore"
+                >
+                  App Store
+                </a>
+              </div>
+            </div>
+            <div class="app-promo__visual">
+              <div class="qr-wrapper">
+                <div class="qr-code">
+                  <img src="./assets/images/qr-code-google-app-store.svg" alt="QR Google Play" />
+                  <p class="qr-code__text" data-i18n="app.android">Android</p>
+                  <p class="qr-code__subtitle" data-i18n="app.scanHint">Наведіть камеру</p>
+                </div>
+                <div class="qr-code">
+                  <img src="./assets/images/qr-code-google-app-store.svg" alt="QR App Store" />
+                  <p class="qr-code__text" data-i18n="app.ios">iOS (iPhone)</p>
+                  <p class="qr-code__subtitle" data-i18n="app.scanHint">Наведіть камеру</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews section" id="reviews">
+        <div class="reviews__container container">
+          <h2 class="reviews__title title" data-i18n="reviews.title">Що про нас кажуть пасажири</h2>
+
+          <div class="reviews__grid">
+            <article class="reviews__item review-card">
+              <div class="review-card__header">
+                <div class="review-card__user">
+                  <div class="review-card__avatar-wrapper">
+                    <img
+                      src="https://placehold.co/100x100/222222/ffffff?text=AK"
+                      alt="Андрій Коваль"
+                      class="review-card__avatar"
+                    />
+                  </div>
+                  <div class="review-card__meta">
+                    <span class="review-card__name">Андрій Коваль</span>
+                    <div class="review-card__rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <img src="./assets/images/google_maps_icon.svg" alt="Google Maps" class="review-card__source-icon" />
+              </div>
+              <p class="review-card__text">
+                "Найкраще таксі в місті! Додаток працює бездоганно, машина приїхала за 5 хвилин. Водій ввічливий, салон
+                чистий. Тепер користуюся тільки Turbo Taxi."
+              </p>
+              <time class="review-card__date" datetime="2026-01-05">5 січня 2026</time>
+            </article>
+            <article class="reviews__item review-card">
+              <div class="review-card__header">
+                <div class="review-card__user">
+                  <div class="review-card__avatar-wrapper">
+                    <img
+                      src="https://placehold.co/100x100/222222/ffffff?text=MY"
+                      alt="Марія Яблонська"
+                      class="review-card__avatar"
+                    />
+                  </div>
+                  <div class="review-card__meta">
+                    <span class="review-card__name">Марія Яблонська</span>
+                    <div class="review-card__rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <img src="./assets/images/google_maps_icon.svg" alt="Google Maps" class="review-card__source-icon" />
+              </div>
+
+              <p class="review-card__text">
+                "Машина приїхала швидко. Водій балакучий;) Дуже ввічливий. Замовляла через сайт."
+              </p>
+              <time class="review-card__date" datetime="2026-01-27">27 січня 2026</time>
+            </article>
+            <article class="reviews__item review-card">
+              <div class="review-card__header">
+                <div class="review-card__user">
+                  <div class="review-card__avatar-wrapper">
+                    <img
+                      src="https://placehold.co/100x100/222222/ffffff?text=OP"
+                      alt="Олександр Петренко"
+                      class="review-card__avatar"
+                    />
+                  </div>
+                  <div class="review-card__meta">
+                    <span class="review-card__name">Олександр Петренко</span>
+                    <div class="review-card__rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <img src="./assets/images/google_maps_icon.svg" alt="Google Maps" class="review-card__source-icon" />
+              </div>
+              <p class="review-card__text">
+                "Швидке та зручне таксі! Завжди точної локації, водії знають місто чудово. Рекомендую всім!"
+              </p>
+              <time class="review-card__date" datetime="2026-01-20">20 січня 2026</time>
+            </article>
+            <article class="reviews__item review-card">
+              <div class="review-card__header">
+                <div class="review-card__user">
+                  <div class="review-card__avatar-wrapper">
+                    <img
+                      src="https://placehold.co/100x100/222222/ffffff?text=KM"
+                      alt="Катерина Мельник"
+                      class="review-card__avatar"
+                    />
+                  </div>
+                  <div class="review-card__meta">
+                    <span class="review-card__name">Катерина Мельник</span>
+                    <div class="review-card__rating">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                  </div>
+                </div>
+                <img src="./assets/images/google_maps_icon.svg" alt="Google Maps" class="review-card__source-icon" />
+              </div>
+              <p class="review-card__text">
+                "Дуже зручний додаток, все інтуїтивно зрозуміло. Особливо подобається функція відстеження авто на карті.
+                Ціни адекватні."
+              </p>
+              <time class="review-card__date" datetime="2026-01-15">15 січня 2026</time>
+            </article>
+          </div>
+          <div class="reviews__more">
+            <a
+              href="https://maps.google.com/"
+              class="reviews__more-btn button button--primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Переглянути більше відгуків на Google Maps"
+              data-i18n="reviews.moreButton"
+            >
+              Більше відгуків на Google Maps
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+<footer class="footer" id="contacts">
+  <div class="footer__container container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="footer__logo">
+          <img src="./assets/icons/logo.svg" alt="Turbo Taxi" class="logo-img" />
+        </a>
+        <p class="footer__description" data-i18n="footer.description">
+          Turbo Taxi — ваш надійний партнер у поїздках по місту та за його межі. Швидко, безпечно та завжди вчасно.
+        </p>
+      </div>
+      <div class="footer__nav">
+        <h4 class="footer__subtitle" data-i18n="footer.navigation">Навігація</h4>
+        <ul class="footer__list">
+          <li><a href="#services" data-i18n="nav.services">Послуги</a></li>
+          <li><a href="#tariffs" data-i18n="nav.tariffs">Тарифи</a></li>
+          <li><a href="#app" data-i18n="nav.app">Додаток</a></li>
+          <li><a href="#reviews" data-i18n="nav.reviews">Відгуки</a></li>
+        </ul>
+      </div>
+          <div class="footer__contacts">
+<h4 class="footer__subtitle" data-i18n="footer.contact">Зв'яжіться з нами</h4>
+            <a href="tel:+380931914414" class="footer__phone">+38 (093) 191 44 14</a>
+            <div class="footer__social">
+              <a
+                href="https://t.me/taxityrbo"
+                class="social-link social-link--tg"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/turbo_taxi__?igsh=MWU3aXRhc3phaW8wbw%3D%3D"
+                class="social-link social-link--inst"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.tiktok.com/@_turbotaxi_?_r=1&_t=ZS-93VkygOECbB"
+                class="social-link social-link--tt"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok"
+              >
+                <i class="fa-brands fa-tiktok"></i>
+              </a>
+              <a
+                href="mailto:taxiturbo111@gmail.com"
+                class="social-link social-link--email"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="taxiturbo111@gmail.com"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  <div class="footer__bottom">
+      <div class="footer__copyright-wrap">
+        <p class="footer__copy" data-i18n="footer.copyright">&copy; 2026 Turbo Taxi. Всі права захищені.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<button class="scroll-top" id="scrollTop" aria-label="Піднятися наверх">
+  <i class="fa-solid fa-chevron-up"></i>
+  
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
