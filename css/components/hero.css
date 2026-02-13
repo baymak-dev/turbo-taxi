@@ -4,11 +4,13 @@
   align-items: center;
   width: 100%;
   position: relative;
+  background-color: #0b0b0b;
   --hero-bg: url('../../assets/images/hero-panoramic-car.webp');
-
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.2) 100%),
-    var(--hero-bg) no-repeat center / cover;
-  content-visibility: auto;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.85) 10%, rgba(0, 0, 0, 0.2) 100%), 
+ var(--hero-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero__container {
@@ -42,14 +44,9 @@
   line-height: var(--leading-normal);
 }
 
-/* Адаптивність */
-/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
 @media (max-width: 768px) {
   .hero {
     justify-content: center;
-    background:
-      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url('../../assets/images/hero-panoramic-car.webp') no-repeat center / cover;
   }
 
   .hero__content {
@@ -74,7 +71,6 @@
   }
 }
 
-/* ===== ДУЖЕ МАЛІ ЕКРАНИ ===== */
 @media (max-width: 480px) {
   .hero {
     min-height: 75vh;

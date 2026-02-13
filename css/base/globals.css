@@ -155,9 +155,6 @@ summary {
   text-align: center;
 }
 
-/* ===== АДАПТИВНІСТЬ ===== */
-
-/* Планшети (768px) */
 @media (max-width: 768px) {
   .container {
     padding-left: 15px !important;
@@ -173,7 +170,6 @@ summary {
   }
 }
 
-/* Телефони (480px) */
 @media (max-width: 480px) {
   .container {
     padding-left: 12px !important;
@@ -185,7 +181,6 @@ summary {
   }
 }
 
-/* Скроллбар */
 @media (min-width: 768px) {
   ::-webkit-scrollbar {
     width: 8px;

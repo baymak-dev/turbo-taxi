@@ -102,7 +102,6 @@
   }
 }
 
-/* Планшети */
 @media (max-width: 992px) {
   .services__grid {
     max-width: 700px;
@@ -115,7 +114,6 @@
   }
 }
 
-/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
 @media (max-width: 768px) {
   .services__grid {
     max-width: 600px;
@@ -144,7 +142,6 @@
   }
 }
 
-/* Телефони */
 @media (max-width: 576px) {
   .services__grid {
     grid-template-columns: 1fr;
@@ -162,7 +159,6 @@
   }
 }
 
-/* Дрібні телефони */
 @media (max-width: 375px) {
   .services__grid {
     max-width: 100%;
@@ -194,7 +190,6 @@
   }
 }
 
-/* Дуже дрібні телефони */
 @media (max-width: 320px) {
   .service-card {
     max-width: 260px;

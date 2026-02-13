@@ -170,7 +170,6 @@
   color: var(--color-primary-light);
 }
 
-/* Адаптивність */
 @media (max-width: 992px) {
   .footer__top {
     gap: var(--gap-lg);
@@ -180,7 +179,7 @@
     font-size: var(--text-sm);
   }
 }
-/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
+
 @media (max-width: 768px) {
   .footer {
     padding: var(--section-padding-mobile);

@@ -9,7 +9,6 @@ export const initNavigation = () => {
   const isMobileMedia = window.matchMedia('(max-width: 768px)')
   let isMenuOpen = false
 
-  // Оптимізація скролу
   let scrollTimeout
   const handleScroll = () => {
     if (scrollTimeout) return

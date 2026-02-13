@@ -139,8 +139,6 @@
   color: var(--color-primary-dark);
 }
 
-/* Адаптивність */
-/* Планшети (992px) */
 @media (max-width: 992px) {
   .tariffs__wrapper {
     gap: var(--gap-lg);
@@ -153,7 +151,6 @@
   }
 }
 
-/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
 @media (max-width: 768px) {
   .tariffs__wrapper {
     flex-direction: column;
@@ -173,7 +170,6 @@
   }
 }
 
-/* Телефони (576px) */
 @media (max-width: 576px) {
   .tariffs__block {
     padding: var(--gap);
@@ -198,7 +194,6 @@
 
 }
 
-/* Малі телефони (480px) */
 @media (max-width: 480px) {
   .tariffs__item {
     font-size: var(--text-sm);
@@ -213,7 +208,6 @@
   }
 }
 
-/* Дуже малі телефони (375px) */
 @media (max-width: 375px) {
   .tariffs__block {
     padding: var(--gap-sm);

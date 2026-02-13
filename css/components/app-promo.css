@@ -217,9 +217,6 @@
   font-weight: 400;
 }
 
-/* ===== АДАПТИВНІСТЬ ===== */
-
-/* Планшети (992px та менше) */
 @media (max-width: 992px) {
   .app-promo {
     padding: 60px 0;
@@ -255,8 +252,6 @@
   }
 }
 
-/* Адаптивність */
-/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
 @media (max-width: 768px) {
   .app-promo {
     padding: 50px 0;
@@ -294,11 +289,8 @@
     width: 160px;
     padding: 15px;
   }
-
-
 }
 
-/* Мобільні (576px та менше) */
 @media (max-width: 576px) {
   .app-promo {
     padding: 40px 0;
@@ -352,7 +344,6 @@
 
 }
 
-/* Дуже маленькі екрани (375px та менше) */
 @media (max-width: 375px) {
   .app-promo {
     border-radius: 16px 16px 0 0;

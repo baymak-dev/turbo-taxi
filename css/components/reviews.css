@@ -19,7 +19,6 @@
 .reviews__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* 2 в ряд */
   gap: var(--gap-lg);
   margin-top: var(--gap);
 }
@@ -204,8 +203,6 @@
   transform: translateX(6px);
 }
 
-/* Адаптивність */
-/* Планшети (992px та менше) */
 @media (max-width: 992px) {
   .reviews__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -214,7 +211,6 @@
   }
 }
 
-/* ===== МОБІЛЬНА ВЕРСІЯ ===== */
 @media (max-width: 768px) {
   .reviews {
     padding: var(--section-padding-tablet);
@@ -259,7 +255,6 @@
   }
 }
 
-/* Мобільні (576px та менше) */
 @media (max-width: 576px) {
   .reviews {
     padding: var(--section-padding-mobile);
@@ -304,7 +299,6 @@
 
 }
 
-/* Дуже маленькі екрани (375px та менше) */
 @media (max-width: 375px) {
   .review-card {
     padding: var(--gap-md);
