@@ -1,38 +1,43 @@
 <!doctype html>
 <html lang="uk">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Taxi Turbo — Швидке таксі у Золочеві | Замовлення таксі онлайн
+        Taxi Turbo — Швидке таксі у Золочеві | Замовлення таксі онлайн
     </title>
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preload" as="image" href="./assets/images/hero-panoramic-car.webp" fetchpriority="high" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700;800&display=swap"
-      rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@700;800&display=swap"
+        rel="stylesheet"
+        media="print" 
+        onload="this.media='all'"
     />
 
     <meta
-      name="description"
-      content="Taxi Turbo — швидке та комфортне таксі у Золочеві. Замовляй таксі онлайн цілодобово. Надійні водії, приємні ціни, миттєва подача."
+        name="description"
+        content="Taxi Turbo — швидке та комфортне таксі у Золочеві. Замовляй таксі онлайн цілодобово. Надійні водії, приємні ціни, миттєва подача."
     />
     <meta
-      name="keywords"
-      content="таксі Золочів, замовлення таксі Золочів, таксі онлайн Золочів, швидке таксі Золочів, таксі по місту Золочів, таксі в області, таксі Золочів ціни, виклик таксі Золочів"
+        name="keywords"
+        content="таксі Золочів, замовлення таксі Золочів, таксі онлайн Золочів, швидке таксі Золочів, таксі по місту Золочів, таксі в області, таксі Золочів ціни, виклик таксі Золочів"
     />
     <meta name="author" content="Taxi Turbo Золочів" />
 
     <meta property="og:title" content="Taxi Turbo — Швидке таксі у Золочеві" />
     <meta
-      property="og:description"
-      content="Швидке та комфортне таксі у Золочеві. Замовляй онлайн цілодобово. Надійні водії, приємні ціни."
+        property="og:description"
+        content="Швидке та комфортне таксі у Золочеві. Замовляй онлайн цілодобово. Надійні водії, приємні ціни."
     />
     <meta property="og:type" content="website" />
     <meta
-      property="og:image"
-      content="https://baymak.dev/turbo-taxi/assets/images/og-image.jpg"
+        property="og:image"
+        content="https://baymak.dev/turbo-taxi/assets/images/og-image.jpg"
     />
     <meta property="og:locale" content="uk_UA" />
     <meta property="og:url" content="https://baymak.dev/turbo-taxi/" />
@@ -43,31 +48,33 @@
     <meta name="ICBM" content="49.80568, 24.89437" />
 
     <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png"
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="assets/icons/apple-touch-icon.png"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32x32.png"
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="assets/icons/favicon-32x32.png"
     />
     <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/icons/favicon-16x16.png"
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="assets/icons/favicon-16x16.png"
     />
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
     <link rel="manifest" href="assets/icons/site.webmanifest" />
     <meta name="theme-color" content="#ffffff" />
 
     <link rel="stylesheet" href="./css/index.css" />
- <link rel="preload" as="image" href="./assets/images/hero-panoramic-car.webp" fetchpriority="high" />
+
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        media="print" 
+        onload="this.media='all'"
     />
 
     <link rel="canonical" href="https://baymak.dev/turbo-taxi/" />
@@ -75,36 +82,36 @@
     <link rel="alternate" hreflang="en" href="https://baymak.dev/turbo-taxi/" />
     <link rel="alternate" hreflang="pl" href="https://baymak.dev/turbo-taxi/" />
     <link
-      rel="alternate"
-      hreflang="x-default"
-      href="https://baymak.dev/turbo-taxi/"
+        rel="alternate"
+        hreflang="x-default"
+        href="https://baymak.dev/turbo-taxi/"
     />
 
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "TaxiService",
-        "name": "Taxi Turbo Золочів",
-        "description": "Швидке та надійне таксі у місті Золочів. Миттєва подача, комфортні авто.",
-        "provider": {
-          "@type": "LocalBusiness",
-          "name": "Taxi Turbo",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Золочів",
-            "addressRegion": "Львівська область",
-            "addressCountry": "UA"
-          },
-          "telephone": "+380931914414",
-          "priceRange": "₴₴"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": "Золочів"
+        {
+            "@context": "https://schema.org",
+            "@type": "TaxiService",
+            "name": "Taxi Turbo Золочів",
+            "description": "Швидке та надійне таксі у місті Золочів. Миттєва подача, комфортні авто.",
+            "provider": {
+                "@type": "LocalBusiness",
+                "name": "Taxi Turbo",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Золочів",
+                    "addressRegion": "Львівська область",
+                    "addressCountry": "UA"
+                },
+                "telephone": "+380931914414",
+                "priceRange": "₴₴"
+            },
+            "areaServed": {
+                "@type": "City",
+                "name": "Золочів"
+            }
         }
-      }
     </script>
-  </head>
+</head>
   <body class="page">
     <header class="header">
       <div class="header__container container">
@@ -422,7 +429,7 @@
               <div class="qr-wrapper">
                 <div class="qr-code">
                   <img
-                    src="./assets/images/qr-code-google-app-store.svg"
+                    src="./assets/images/qr-code-google.svg"
                     alt="QR-код для завантаження додатка Turbo Taxi з Google Play"
                     width="140"
                     height="140"
@@ -726,5 +733,14 @@
     </footer>
 
     <script type="module" src="./js/main.js" defer></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js')
+            .then(reg => console.log('SW Registered!'))
+            .catch(err => console.log('SW Error:', err));
+        });
+      }
+    </script>
   </body>
 </html>
